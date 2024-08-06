@@ -12,6 +12,9 @@ frame:SetScript("OnEvent",function(self,event,...)
 		DEFAULT_CHAT_FRAME.editBox:SetText("/db object Floating Wreckage") ChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox, 0)
 		DEFAULT_CHAT_FRAME.editBox:SetText("/db object Patch of Elemental Water") ChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox, 0)
 	end
+	if (IsAddOnLoaded("TurtleHCFilter")) then
+		DEFAULT_CHAT_FRAME.editBox:SetText("/hcf 3") ChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox, 0)
+	end
 end);
 local class = UnitClass("player"); 
 if (class == "Hunter") then
