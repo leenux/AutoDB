@@ -15,6 +15,9 @@ frame:SetScript("OnEvent",function(self,event,...)
 	if (IsAddOnLoaded("TurtleHCFilter")) then
 		DEFAULT_CHAT_FRAME.editBox:SetText("/hcf 3") ChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox, 0)
 	end
+	if (IsAddOnLoaded("LazyScript")) then
+		DEFAULT_CHAT_FRAME.editBox:SetText("/ls dismiss") ChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox, 0)
+	end
 end);
 local class = UnitClass("player"); 
 if (class == "Hunter") then
